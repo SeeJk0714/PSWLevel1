@@ -1,0 +1,141 @@
+header {
+  background: url("./img/2-PhotoRoom.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+header h1 {
+  position: absolute;
+  z-index: 3;
+  color: #fae1dd;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-size: 60px !important;
+  /* text-shadow: 2px 2px black; */
+}
+
+body {
+  background-color: #fff8f2;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: wavy;
+  font-family: "Cinzel", serif;
+}
+
+body .descp {
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic .hoverimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  /* width: fit-content;
+  height: fit-content; */
+}
+
+.pic .hovercaption {
+  display: none;
+}
+
+.pic:hover {
+  cursor: pointer;
+}
+
+.pic:hover .hoverimg {
+  display: block;
+}
+
+.pic:hover .hovercaption {
+  display: block;
+}
+
+.pic img {
+  /* height: 500px; */
+  object-fit: contain;
+}
+
+.hovercaption {
+  float: left;
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  color: #93adc6;
+}
+
+.caption {
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.caption .price {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* .body-container{
+  scroll-snap-type: mandatory; */
+/* scroll-snap-points-y: repeat(300px); */
+/* scroll-snap-type: x mandatory;
+} */
+
+.child {
+  scroll-snap-align: start;
+}
+
+section h1 {
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  header {
+    background: url(img/7.jpg);
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .caption {
+    font-size: 16px;
+  }
+  body h1 {
+    font-size: 30px;
+  }
+
+  body .descp {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .caption {
+    font-size: 14px;
+  }
+}
