@@ -1,0 +1,12 @@
+.happy .btn {
+    border: 0;
+    
+    
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 246px;
+    height: 45px;
+}

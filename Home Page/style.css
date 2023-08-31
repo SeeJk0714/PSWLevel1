@@ -1,17 +1,333 @@
+.bi:hover {
+    cursor: pointer;
+}
+
+.bi:hover form {
+    display: block;
+}
+
+.bi-tiktok {
+    display: inline-block;
+    /* left: 670px; */
+}
+
+#search {
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    background: none;
+}
+
+.bi-instagram {
+    display: inline-block;
+}
+
+.search {
+    display: table;
+}
+.search input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 28px;
+    min-width: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    line-height: 18px;
+    margin: 5px 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    font-family: "Mukta Malar";
+    transition: all 0.6s ease;
+    cursor: pointer;
+    color: black;
+}
+.search input + div {
+    position: relative;
+    height: 28px;
+    width: 100%;
+    margin: -28px 0 0 0;
+}
+.search input + div svg {
+    display: block;
+    position: absolute;
+    height: 28px;
+    width: 160px;
+    right: 0;
+    top: 0;
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5px;
+    stroke-dashoffset: 271.908;
+    stroke-dasharray: 59 212.908;
+    transition: all 0.6s ease;
+}
+.search input:not(:-moz-placeholder-shown) {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:-ms-input-placeholder) {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:placeholder-shown),
+.search input:focus {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:-moz-placeholder-shown) + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+.search input:not(:-ms-input-placeholder) + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+.search input:not(:placeholder-shown) + div svg,
+.search input:focus + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: inherit;
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a.nav-link {
+    color: black;
+}
+
 header {
-  background: url("./img/bg.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  background-attachment: fixed;
+    background: url("./img/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
 }
 
 header h1 {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playfair Display", serif;
+    font-size: 120px;
+    letter-spacing: 5px;
+}
+
+/* .overlay {
   position: absolute;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Playfair Display", serif;
-  font-size: 160px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+} */
+
+.building {
+    background: url("./img/la\ galerie\ dior.jpg");
+    background-size: cover;
+    height: 120vh;
+    position: relative;
+}
+
+.building p {
+    position: absolute;
+    font-size: 24px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Cinzel", serif;
+}
+
+.about {
+    /* background: url("./img/about.webp"); */
+    background-color: #fff1e6;
+    /* width: 100%; */
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    z-index: 1;
+    /* height: fit-content; */
+    font-size: 20px;
+}
+
+/* .about::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+} */
+
+.about h2 {
+    padding: 50px;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    font-family: "Cinzel", serif;
+    color: #e8a598;
+}
+
+.text {
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ac8f81;
+}
+
+.founder {
+    background-color: #fff1e6;
+    padding-bottom: 50px;
+}
+
+.founder .outer-img {
+    border: 2px solid white;
+    width: fit-content;
+    padding: 20px;
+}
+
+.founder img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.founder p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #e8a598;
+}
+
+.jisoo {
+    background-color: #fff1e6;
+    padding-bottom: 50px;
+    position: relative;
+    height: 200vh;
+}
+
+.jisoo img {
+    height: 300px;
+    width: 300px;
+}
+
+.jisoo .j-img1 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.jisoo .j-img2 {
+    position: absolute;
+    top: 400px;
+    right: 400px;
+}
+
+.jisoo .j-img3 {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+.jisoo .j-img4 {
+    position: absolute;
+    top: 800px;
+    right: 400px;
+}
+
+.jisoo .j-img5 {
+    position: absolute;
+    top: 1000px;
+    left: 400px;
+}
+
+.jisoo .j-img6 {
+    position: absolute;
+    top: 1200px;
+    right: 400px;
+}
+
+.men {
+    background-color: #f6d1b4;
+    padding-bottom: 50px;
+    position: relative;
+    height: 200vh;
+}
+
+.men img {
+    height: 300px;
+    width: 300px;
+}
+
+.men .m-img1 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.men .m-img2 {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+}
+
+.men .m-img3 {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+.men .m-img4 {
+    position: absolute;
+    top: 600px;
+    right: 400px;
+}
+
+.men .m-img5 {
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+
+.men .m-img6 {
+    position: absolute;
+    top: 1200px;
+    right: 400px;
 }

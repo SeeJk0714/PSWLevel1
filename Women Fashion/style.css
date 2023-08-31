@@ -1,99 +1,226 @@
+.bi:hover {
+    cursor: pointer;
+}
+
+.bi:hover form {
+    display: block;
+}
+
+.bi-tiktok {
+    display: inline-block;
+    /* left: 670px; */
+}
+
+#search {
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    background: none;
+}
+
+.bi-instagram {
+    display: inline-block;
+}
+
+.search {
+    display: table;
+}
+.search input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 28px;
+    min-width: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    line-height: 18px;
+    margin: 5px 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    font-family: "Mukta Malar";
+    transition: all 0.6s ease;
+    cursor: pointer;
+    color: black;
+}
+.search input + div {
+    position: relative;
+    height: 28px;
+    width: 100%;
+    margin: -28px 0 0 0;
+}
+.search input + div svg {
+    display: block;
+    position: absolute;
+    height: 28px;
+    width: 160px;
+    right: 0;
+    top: 0;
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5px;
+    stroke-dashoffset: 271.908;
+    stroke-dasharray: 59 212.908;
+    transition: all 0.6s ease;
+}
+.search input:not(:-moz-placeholder-shown) {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:-ms-input-placeholder) {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:placeholder-shown),
+.search input:focus {
+    width: 160px;
+    padding: 0 4px;
+    cursor: text;
+}
+.search input:not(:-moz-placeholder-shown) + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+.search input:not(:-ms-input-placeholder) + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+.search input:not(:placeholder-shown) + div svg,
+.search input:focus + div svg {
+    stroke-dasharray: 150 212.908;
+    stroke-dashoffset: 300;
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: inherit;
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a.nav-link {
+    color: black;
+}
+
 header {
-  background: url("./img/2-PhotoRoom.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  background-attachment: fixed;
+    background: url("./img/2-PhotoRoom.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
 }
 
 header h1 {
-  position: absolute;
-  z-index: 3;
-  color: #fae1dd;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Playfair Display", serif;
-  font-size: 60px !important;
-  /* text-shadow: 2px 2px black; */
+    position: absolute;
+    z-index: 3;
+    color: #fae1dd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playfair Display", serif;
+    font-size: 60px !important;
+    /* text-shadow: 2px 2px black; */
 }
 
 body {
-  background-color: #fff8f2;
+    background-color: #fff8f2;
 }
 
 body h1 {
-  text-align: center;
-  font-size: 50px;
-  text-decoration: wavy;
-  font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: wavy;
+    font-family: "Cinzel", serif;
 }
 
 body .descp {
-  font-family: "Josefin Slab", serif;
-  font-weight: 500;
-  font-size: 24px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .pic {
-  position: relative;
+    position: relative;
 }
 
 .pic .hoverimg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  /* width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    /* width: fit-content;
   height: fit-content; */
 }
 
 .pic .hovercaption {
-  display: none;
+    display: none;
 }
 
 .pic:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .pic:hover .hoverimg {
-  display: block;
+    display: block;
 }
 
 .pic:hover .hovercaption {
-  display: block;
+    display: block;
 }
 
 .pic img {
-  /* height: 500px; */
-  object-fit: contain;
+    /* height: 500px; */
+    object-fit: contain;
 }
 
 .hovercaption {
-  float: left;
-  font-family: "Josefin Slab", serif;
-  font-size: 18px;
-  color: #93adc6;
+    float: left;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    color: #93adc6;
 }
 
 .caption {
-  font-family: "Josefin Slab", serif;
-  font-size: 18px;
-  margin-top: 30px;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    margin-top: 30px;
 }
 
 .caption .price {
-  font-weight: bold;
-  letter-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* .body-container{
@@ -103,39 +230,39 @@ body .descp {
 } */
 
 .child {
-  scroll-snap-align: start;
+    scroll-snap-align: start;
 }
 
 section h1 {
-  padding: 20px;
+    padding: 20px;
 }
 
 .row {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 @media (max-width: 700px) {
-  header {
-    background: url(img/7.jpg);
-    background-size: cover;
-  }
+    header {
+        background: url(img/7.jpg);
+        background-size: cover;
+    }
 }
 
 @media (max-width: 500px) {
-  .caption {
-    font-size: 16px;
-  }
-  body h1 {
-    font-size: 30px;
-  }
+    .caption {
+        font-size: 16px;
+    }
+    body h1 {
+        font-size: 30px;
+    }
 
-  body .descp {
-    font-size: 18px;
-  }
+    body .descp {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 400px) {
-  .caption {
-    font-size: 14px;
-  }
+    .caption {
+        font-size: 14px;
+    }
 }
