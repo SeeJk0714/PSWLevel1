@@ -125,6 +125,13 @@ a.nav-link {
     color: black;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 .happy .btn {
     border: 0;
 

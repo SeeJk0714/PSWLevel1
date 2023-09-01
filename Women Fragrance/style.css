@@ -142,6 +142,13 @@ header {
     z-index: 2;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 header h1 {
     position: absolute;
     z-index: 3;
