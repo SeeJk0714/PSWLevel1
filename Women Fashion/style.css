@@ -113,9 +113,9 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-* {
+/* * {
     box-sizing: inherit;
-}
+} */
 *:before,
 *:after {
     box-sizing: inherit;
@@ -232,13 +232,40 @@ body .descp {
 .child {
     scroll-snap-align: start;
 }
-
 section h1 {
     padding: 20px;
 }
 
-.row {
+/* .row {
     margin-bottom: 60px;
+} */
+footer {
+    height: 50vh;
+    padding-top: 80px;
+    background-color: white;
+}
+footer .accordion-button {
+    padding-left: 0;
+}
+
+@media (max-width: 992px) {
+    footer {
+        height: 50vh;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 80vh;
+        padding-top: 40px;
+    }
+    footer .line {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(167, 167, 167);
+    }
 }
 
 @media (max-width: 700px) {
@@ -248,7 +275,7 @@ section h1 {
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .caption {
         font-size: 16px;
     }
@@ -265,4 +292,4 @@ section h1 {
     .caption {
         font-size: 14px;
     }
-}
+} */
