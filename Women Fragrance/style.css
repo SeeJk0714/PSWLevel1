@@ -113,9 +113,6 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* * {
-    box-sizing: inherit;
-} */
 *:before,
 *:after {
     box-sizing: inherit;
@@ -123,6 +120,35 @@
 
 a.nav-link {
     color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff1e6;
+}
+
+.navbar-brand {
+    font-family: "Playfair Display SC", serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 10px 20px 10px;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-item {
+    font-family: "Cinzel", serif;
+
+    font-size: 16px;
+}
+
+.navbar .nav-link:hover {
+    cursor: pointer !important;
+    color: #e8a598 !important;
 }
 
 header {
@@ -140,13 +166,6 @@ header {
     height: 100vh;
     position: absolute;
     z-index: 2;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
 }
 
 header h1 {
@@ -250,25 +269,111 @@ section h1 {
 
 footer {
     height: 50vh;
-    padding-top: 80px;
+    padding-top: 40px;
     background-color: white;
 }
+
 footer .accordion-button {
     padding-left: 0;
 }
 
+footer .input {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
+footer .input:hover {
+    border-bottom: 1px solid rgb(178, 177, 177);
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftitle {
+    font-weight: 900;
+    font-family: "Cinzel", serif;
+    font-size: 18px;
+}
+footer p {
+    font-family: "Cormorant", serif;
+    font-size: 16px;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+footer input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 2px;
+}
+
+footer :placeholder-shown {
+    font-family: "Cormorant", serif;
+}
+
+.line {
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background: none;
+    border-bottom: 1px solid #000;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.line:hover::after {
+    transform: scaleX(1);
+}
+
+.accordian-body {
+    padding: 0 !important;
+}
+
 @media (max-width: 992px) {
     footer {
-        height: 50vh;
-        padding-top: 80px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    footer .row {
+        display: block;
+    }
+
+    footer .em-line {
+        border-bottom: 1px solid black;
+        width: auto;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
     footer {
-        height: 80vh;
         padding-top: 40px;
     }
+    footer .line {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(167, 167, 167);
+    }
+
     footer .line {
         margin-top: 20px;
         margin-bottom: 20px;
