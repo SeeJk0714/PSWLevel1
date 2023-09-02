@@ -278,8 +278,9 @@ textarea:active {
 }
 
 footer {
-    height: 50vh;
+    height: auto;
     padding-top: 40px;
+    padding-bottom: 40px;
     background-color: white;
 }
 
