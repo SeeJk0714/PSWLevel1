@@ -410,14 +410,6 @@ footer :placeholder-shown {
         margin-top: 20px;
         margin-bottom: 20px;
         padding-bottom: 20px;
-        border-bottom: 2px solid rgb(167, 167, 167);
-    }
-
-    footer .line {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid rgb(167, 167, 167);
     }
 }
 
