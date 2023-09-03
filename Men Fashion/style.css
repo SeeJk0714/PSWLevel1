@@ -8,7 +8,6 @@
 
 .bi-tiktok {
     display: inline-block;
-    /* left: 670px; */
 }
 
 #search {
@@ -177,7 +176,6 @@ header h1 {
     transform: translate(-50%, -50%);
     font-family: "Playfair Display", serif;
     font-size: 60px !important;
-    /* text-shadow: 2px 2px black; */
 }
 
 body {
@@ -206,8 +204,6 @@ body .descp {
     left: 0;
     top: 0;
     display: none;
-    /* width: fit-content;
-    height: fit-content; */
 }
 
 .pic .hovercaption {
@@ -227,7 +223,6 @@ body .descp {
 }
 
 .pic img {
-    /* height: 500px; */
     object-fit: contain;
 }
 

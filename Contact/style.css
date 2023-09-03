@@ -8,7 +8,6 @@
 
 .bi-tiktok {
     display: inline-block;
-    /* left: 670px; */
 }
 
 #search {
@@ -113,9 +112,6 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* * {
-    box-sizing: inherit;
-} */
 *:before,
 *:after {
     box-sizing: inherit;
@@ -159,8 +155,6 @@ body .contactp {
     cursor: pointer;
     background-color: #f7c0a4;
     font-family: "EB Garamond", serif;
-
-    /* box-shadow: 2px 0px 2px white; */
 }
 
 .form {
@@ -195,7 +189,6 @@ textarea:active {
     border-radius: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.3);
-    /* background-color: rgba(70, 18, 18, 0.8); */
 }
 .ISA {
     font-family: "EB Garamond", serif;
@@ -233,7 +226,6 @@ textarea:active {
 .app-btn:hover {
     cursor: pointer;
     background-color: #f7c0a4;
-    /* box-shadow: 2px 0px 2px white; */
 }
 
 .navbar {
